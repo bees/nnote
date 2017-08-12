@@ -2,6 +2,22 @@
 
 > A notes pwa
 
+This is a selfish project. I generally love evernote but I hate its formatting
+options. There are countless notes apps but none of them do exactly what I
+want. This is also an opporutnity for me to play around with some frontend code
+as I've been doing backend heavy work for my job.
+
+### Project goals:
+- [ ] markdown driven notes (GFM for todo-list functionality)
+- [ ] offline-first pwa
+- [ ] driven off of pouch/couch for a sane syncing mechanism
+
+
+### Project notes: 
+I am heavily using CSS grid layout because it is fantastic and I
+am likely going to be my only user.
+[caniuse](http://caniuse.com/css-grid/embed)
+
 ## Build Setup
 
 ``` bash
