@@ -1,10 +1,12 @@
+![nnote logo](https://raw.githubusercontent.com/bees/nnote/master/nnote.png)
+
 # nnote
 
 > A notes pwa
 
 This is a selfish project. I generally love evernote but I hate its formatting
 options. There are countless notes apps but none of them do exactly what I
-want. This is also an opporutnity for me to play around with some frontend code
+want. This is also an opportunity for me to play around with some frontend code
 as I've been doing backend heavy work for my job.
 
 ### Project goals:
