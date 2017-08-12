@@ -1,0 +1,25 @@
+<svg width="30" height="34" viewBox="0 0 120 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(213 -281)">
+<g id="Group">
+<g id="Intersect">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 -153 311)" fill="#7F0C24"/>
+</g>
+<g id="Subtract">
+<use xlink:href="#path1_fill" transform="translate(-213 281)" fill="#FF1949"/>
+</g>
+<g id="Subtract">
+<use xlink:href="#path2_fill" transform="translate(-153 281)" fill="#00B8FF"/>
+</g>
+<g id="Intersect">
+<use xlink:href="#path0_fill" transform="translate(-153 311)" fill="#002E40"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0C 16.5685 0 30 13.4315 30 30L 30 106C 13.4315 106 0 92.5685 0 76L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 60 30C 60 13.4315 46.5685 0 30 0C 13.4315 0 0 13.4315 0 30L 0 106C 0 122.569 13.4315 136 30 136L 30 60C 30 43.4315 43.4315 30 60 30Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 60 30C 60 13.4315 46.5685 0 30 0C 13.4315 0 0 13.4315 0 30C 16.5685 30 30 43.4315 30 60L 30 136C 46.5685 136 60 122.569 60 106L 60 30Z"/>
+</defs>
+</svg>
