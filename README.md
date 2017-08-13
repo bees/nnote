@@ -10,10 +10,15 @@ want. This is also an opportunity for me to play around with some frontend code
 as I've been doing backend heavy work for my job.
 
 ### Project goals:
+core functionality:
 - [ ] markdown driven notes (GFM for todo-list functionality)
 - [ ] offline-first pwa
 - [ ] driven off of pouch/couch for a sane syncing mechanism
+- [ ] tagging system + full text search
 
+TODOS:
+- [ ] ci/cd
+- [ ] coverage reports
 
 ### Project notes: 
 I am heavily using CSS grid layout because it is fantastic and I
