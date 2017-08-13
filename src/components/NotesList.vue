@@ -1,8 +1,13 @@
 <template>
  <dl class="preview-items">
    <div v-for="item in previewItems" class="preview-item">
-     <dt class="title">
+     <dt class="item-title">
+       <span class="title">
          {{ item.title }}
+       </span>
+       <span class="date">
+         {{ item.date }}
+       </span>
      </dt>
      <dd class="preview">
        {{ item.preview }}
@@ -12,37 +17,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-  data () {
-    return {
-      previewItems: [
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        },
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        },
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        },
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        },
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        },
-        {
-          title: 'note title',
-          preview: 'note body preview copy wow heck'
-        }
-      ]
-    }
-  }
+  computed: mapState({
+    previewItems: state => state.notes.previewItems
+  })
 }
 </script>
 
@@ -56,12 +36,22 @@ export default {
 
 .preview-item {
   margin: 1em;
-
   background: $list-item-bg;
-  .title {
+
+  .item-title {
+    display: flex;
     padding: 1rem;
-    font-weight: bold;
-    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .date {
+      font-weight: normal;
+      font-size: .8em;
+    }
   }
 
   .preview {

@@ -1,7 +1,9 @@
 import Vue from 'vue'
-import App from './views/App'
-import router from './router'
 import 'normalize.css'
+
+import router from './router'
+import store from './store'
+import App from './views/App'
 
 Vue.config.productionTip = false
 
@@ -9,5 +11,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

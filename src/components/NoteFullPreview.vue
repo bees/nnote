@@ -5,7 +5,7 @@
       <h1>{{title}}</h1>
       <vue-markdown
         :source="markdown"
-         class="test"
+         class="markdown-body"
       >
       </vue-markdown>
     </div>
@@ -14,17 +14,17 @@
 
 <script>
 import VueMarkdown from 'vue-markdown'
+import 'github-markdown-css'
+import { mapState } from 'vuex'
 
 export default {
   components: {
     VueMarkdown
   },
-  data () {
-    return {
-      title: 'current note preview',
-      markdown: 'wow'
-    }
-  }
+  computed: mapState({
+    title: state => state.notes.currentNote.title,
+    markdown: state => state.notes.currentNote.markdown
+  })
 }
 </script>
 
@@ -40,5 +40,9 @@ export default {
   background: $note-card-bg;
   margin: 1em;
   padding: 1em;
+}
+
+.markdown-body {
+  font-family: roboto;
 }
 </style>
