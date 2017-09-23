@@ -22,8 +22,8 @@
           v-for="note in pinnedNotes"
           class="navigation-list-item"
         >
-         <router-link to="note">
-           {{ note }}
+         <router-link :to="note.id">
+           {{ note.title }}
          </router-link>
         </li>
       </ul>
@@ -37,8 +37,8 @@
           v-for="note in recentNotes"
           class="navigation-list-item"
         >
-         <router-link to="note">
-           {{ note }}
+         <router-link :to="note.id">
+           {{ note.title }}
          </router-link>
         </li>
       </ul>
@@ -52,10 +52,10 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState({
-      pinnedNotes: state => state.notes.recentNotes,
-      name: state => state.config.name,
-      recentNotes: state => state.notes.recentNotes,
-      searchInput: state => state.notes.searchInput
+      pinnedNotes: state => state.recentNotes,
+      name: state => state.name,
+      recentNotes: state => state.recentNotes,
+      searchInput: state => state.searchInput
     }),
     searchModel: {
       get () {

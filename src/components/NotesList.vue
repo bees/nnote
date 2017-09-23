@@ -1,6 +1,10 @@
 <template>
  <dl class="preview-items">
-   <div v-for="item in previewItems" class="preview-item">
+   <div
+     v-for="item in previewItems"
+     @click="displayNote(item._id)"
+     class="preview-item"
+   >
      <dt class="item-title">
        <span class="title">
          {{ item.title }}
@@ -17,12 +21,17 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   computed: mapState({
-    previewItems: state => state.notes.previewItems
-  })
+    previewItems: state => state.previewItems
+  }),
+  methods: {
+    ...mapActions({
+      displayNote: 'getNoteByID'
+    })
+  }
 }
 </script>
 
@@ -30,6 +39,7 @@ export default {
 @import  "../styles/variables.scss";
 .preview-items{
   background: $list-bg;
+  grid-row: controls/bottom;
   overflow-y: scroll;
   margin: 0;
 }

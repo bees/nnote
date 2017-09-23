@@ -6,12 +6,19 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import Sidebar from '@/components/Sidebar'
 
 export default {
   name: 'app',
   components: {
     Sidebar
+  },
+  methods: mapActions([
+    'bootstrap'
+  ]),
+  created () {
+    this.bootstrap()
   }
 }
 </script>
