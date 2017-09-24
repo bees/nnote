@@ -1,7 +1,5 @@
 <template>
-  <section class="full-page-note">
     <note-editor></note-editor>
-  </section>
 </template>
 
 <script>
